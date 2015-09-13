@@ -47,12 +47,12 @@ public class Application extends Controller {
 				
 		if("error2".equalsIgnoreCase(ticket)) {
 			renderText("{ \"@Success\": \"fail\"," +
-					"\"@ErrorCode\": \"-3\" \"," +
+					"\"@ErrorCode\": \"-3\" ," +
 					"\"@ErrorText\": \"Ticket validated by George at 30/1/2015 19:15\" }");			
 		}
 		if(ticket.toUpperCase().indexOf("ERROR")!=-1) {
 			renderText("{ \"@Success\": \"fail\"," +
-					"\"@ErrorCode\": \"-2\" \"," +
+					"\"@ErrorCode\": \"-2\" ," +
 					"\"@ErrorText\": \"Invalid Ticket\" }");						
 		}
 		
