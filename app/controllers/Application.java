@@ -42,18 +42,18 @@ public class Application extends Controller {
 		}
 		if((user.length()==0) || (ticket.length()==0)) {
 			renderText("{ \"@Success\": \"fail\"," +
-					"\"@ErrorCode\": \"-1\" \"}");
+					"\"@ErrorCode\": \"-1\" }");
 		}
 				
 		if("error2".equalsIgnoreCase(ticket)) {
 			renderText("{ \"@Success\": \"fail\"," +
 					"\"@ErrorCode\": \"-3\" \"," +
-					"\"@ErrorText\": \"Ticket validated by George at 30/1/2015 19:15\" \"}");			
+					"\"@ErrorText\": \"Ticket validated by George at 30/1/2015 19:15\" }");			
 		}
 		if(ticket.toUpperCase().indexOf("ERROR")!=-1) {
 			renderText("{ \"@Success\": \"fail\"," +
 					"\"@ErrorCode\": \"-2\" \"," +
-					"\"@ErrorText\": \"Invalid Ticket\" \"}");						
+					"\"@ErrorText\": \"Invalid Ticket\" }");						
 		}
 		
 		renderText("{ \"@Success\": \"true\"," +
